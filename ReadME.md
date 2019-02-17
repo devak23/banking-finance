@@ -44,4 +44,4 @@ A SWIFT code is an international bank code that identifies particular banks worl
 
 Boleto is a payment method in Brazil regulated by Brazilian Federation Bank. Boleto in english means Ticket. A boleto can be paid at ATMs, branch facilities and internet banking of any Bank, Post Office, Lottery Agent and some supermarkets until its due date. After the due date it can only be paid at the issuer bank facilities.
 
-![Boleto Sample](https://en.wikipedia.org/wiki/Boleto#/media/File:BoletoBancario.png)
+![Boleto Sample](./img/boleto.png)
