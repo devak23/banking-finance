@@ -4,6 +4,10 @@
 
 It's a funds transfer system run by NACHA (National Automated Clearing House Association). Its generally used by depository institutions such as banks. When you send money from one account to another, you can do it via bank wire or ACH. Think of ACH as an electronic payment from one bank account to another. The transaction is initiated by a business to debit an account by submitting an ACH file. This file contains the bank’s ABA (American Bankers Association®) number and the account number(s) to debit, along with the amount(s). This file is submitted for processing nightly and passes through networks controlled by the Federal Reserve. ACH payments are not guaranteed; that is, they must clear, much like a check. ACH is useful as an alternative to accepting a credit card.
 
+#### _Demand Deposit_, _Term Deposit_
+
+These are funds held in an account that can be withdrawn at any time by the depositor. Ex: Savings account, checking account. A term deposit or time deposits are made for a predetermined amount of time at a certain rate. Demand Deposits have high liquidity, lower interest rates Vs term deposits have lower liquidity but higher interest rates. The most common form of a term deposit is called a CD (certificate of Deposit)
+
 #### _Despository Institutions_
 
 A depository institution is colloquiallyc called as "finanical institution" in US such as savings bank, commercial banks, loan associations, credit unions that is legally allowed to accept monetary deposits from consumers
@@ -63,5 +67,15 @@ NOW (negotiable order of withdrawal) accounts are essentially checking accounts 
 - :airplane: Wire transfers are guaranteed funds that occur on the same day provided the instructions are given to the originating bank before the cutoff time and sent by the originating bank to the Federal Reserve and received and processed by the receiving institution before close of their business day. Wires are not real time, they are normally same day.
 - :moneybag: Wires cost the bank $0.35 per wire and the bank typically retails them to customers for $6 in high volume to \$30 in very low volume. This covers the costs of labor, technology and compliance.
 
-- :truck:ACH is not same day, it is next (or can be future) day settlement. Transactions are entered with a date to settle which is normally the next day. At the opening of business banks receive files from the day before and process them, offsetting their general ledger with customer accounts. However because ACH debits are not guaranteed, the corresponding credit can be held. ACH credits are guaranteed and must be settled on the settlement day by the NACHA Rules.
+- :truck: ACH is not same day, it is next (or can be future) day settlement. Transactions are entered with a date to settle which is normally the next day. At the opening of business banks receive files from the day before and process them, offsetting their general ledger with customer accounts. However because ACH debits are not guaranteed, the corresponding credit can be held. ACH credits are guaranteed and must be settled on the settlement day by the NACHA Rules.
 - :dollar: ACH cost banks $0.035 per transaction or $0.025 per transaction in bulk (>1k transactions). They usually retail to customers for between $0.10 and $2.50, depending on volume. ACH by definition is meant to be automated, and meant to be delayed settlement, thus the lower cost associated. There is a push for real-time and same-day ACH service but large banks are fighting the push.
+
+#### _Global ACH_
+
+A global ACH system expands the use of certain electronic payments beyond the North American region. Doing so makes it easier and less costly to transfer funds to other countries. Electronic payments using the ACH (Automated Clearing House) system are only possible within the United States and Canada. However, similar types of transaction processing systems are available in other countries or regions, such as Australia, China, Europe, Hong Kong, India, Japan, New Zealand, Singapore, and South Korea.
+
+In order to initiate an ACH payment that crosses borders into the electronic payment system of another country, a business must enter its payment information into a portal (usually maintained by a bank) that links to the other country’s payment system. This may require the entry of different types of data, in order to comply with the message formatting requirements of the other system. Many of these systems do not allow for the inclusion of remittance information along with a payment, so the payer will need to supply this information to the payee separately, perhaps as part of an e-mail message.
+
+In those parts of the world that do not have systems similar to the ACH system, it may be necessary to pay by the more expensive wire transfer method. A wire transfer is expensive not only for the sender, but also for the recipient, who is charged a lifting fee by the receiving bank to process the payment.
+
+When the much higher cost of a wire transfer is compared to the cost of an ACH transfer, it is apparent that global ACH is a much more cost-effective solution, despite the issues with transferring information into the ACH formats required for different regions.
