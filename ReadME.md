@@ -79,3 +79,25 @@ In order to initiate an ACH payment that crosses borders into the electronic pay
 In those parts of the world that do not have systems similar to the ACH system, it may be necessary to pay by the more expensive wire transfer method. A wire transfer is expensive not only for the sender, but also for the recipient, who is charged a lifting fee by the receiving bank to process the payment.
 
 When the much higher cost of a wire transfer is compared to the cost of an ACH transfer, it is apparent that global ACH is a much more cost-effective solution, despite the issues with transferring information into the ACH formats required for different regions.
+
+#### _MT103_
+This is a Swift payment format used for cash transfer specifically for cross-border wire transfer. MT101 messages were designed for Corporates for bulk transfer. MT103 relate to single transfer and is predominantly used between bank to bank. So MT101, is a message that gets sent to a bank to deduct the money from an account  - the payment instruction. This message can contain 1 or more lines. This means there can be a sinle instruction stating to debit 100$ from account X and out of that, 50$ should go to Account A, 20 to B and 30 to C.  When the bank receives this message, it will forward those single lines to bank where the money needs to be added to that account. This could be the same bank or another bank. Thus, MT101 is the actual payment instruction that gets sent and MT103 is the internal single lines messages used within the bank. Following are the fields in a MT013 message:
+
+|Field|Value|
+|:-----:|:-----:|
+|:20| Transaction Reference Number|
+|:23B| Bank Operation Code |
+|:32A| Value date/Currency/Interbank Settled|
+|:33B| Currency/Original Ordered Amount|
+|:50A, F or K| Ordering Customer (Payer)|
+|:52A or D| Ordering institution (Payer's Bank)|
+|:53A, B or D| Senders Correspondent (Bank)|
+|:54A, B or D| Receivers Correspondent (Bank)|
+|:56A, C or D| Intermediary (Bank)|
+|:57A, B, C or D| Account with Institution (Beneficiary Bank)|
+|:59 or 59A| Beneficiary|
+|:70 | Remittance information (Payment reference)|
+|:71A | Details of Charges (BEN/OUR/SHA)|
+|:72 | Sender to receiver information|
+|:77B | Regulatory Reporting|
+
