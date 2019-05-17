@@ -117,3 +117,18 @@ A service offered by banks to companies in which the company receives payments b
 
 #### _Non Operating Balance/Assets_
 Non operating assets/funds/balance are redundant assets that do not contribute to the core operations of the company. These are the assets that a company may keep around but not use it. These assets may still generate income or provide a ROI. Non operating assets are listed in the company's balance sheet along with operating assets/balance. Common non operating assets are unallocated cash, marketable securities, loans receivable, idle equipments and vacant land.
+
+#### _Value Date_
+Value date has several meanings in different branches of finance.
+- In Banking systems, the value date refers to the date at which the ownership changes from one party to the other in case of payments made from party A to party B. In other words, it could also be the date on which an account holder can use the funds that have been deposited in her account after a cheque is cleared. Its also the date on which the deposits in the account start earning interest.
+- In trading systems, the value date refers to the date on which the item was bought, sold or must be delivered.
+- In accounting systems, the value date refers to the date on which the allocated/budgeted/contracted funds are paid, received or used.
+- In general its a date when the value of a given asset (which fluctuates in price) is determined.
+
+#### _Settlement Date_
+Settlement date refers to the date:
+- in trading systems, when the trade was settled or the assets actually changed the ownership from party A to party B.
+- in banking systems, when the funds actually get deposited into the beneficiary account.
+
+#### _Transaction Date_
+Transaction date refers to the date on which a trade/order/purchase/sales gets executed and registered in the system.
