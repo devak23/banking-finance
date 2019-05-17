@@ -101,3 +101,19 @@ This is a Swift payment format used for cash transfer specifically for cross-bor
 |:72 | Sender to receiver information|
 |:77B | Regulatory Reporting|
 
+#### _BAI2_
+BAI2 format is a specialized set of codes used for cash management by Bank Administration Institute (BAI). BAI2 files come to an account holder from a BANK. The account holder imports the file into a book keeping application to reconcile bank statements. Reconciliation is a process whereby the bank statements are compared to an book keeping application's  data and differences are resolved. If you have to choose between BAI2 and MT940 then you need to consider where the client location is. If client location and Banks are in USA , BAI2 is good and you will find lot of documentations on the config. If you do business with International Banks and your client location is not in US don't think of BAI2, since BAI is not most used format for banks around the world. Switch to MT940.
+
+#### _BookTransfer_ _GIRO_
+A book transfer is a transfer of legal right of ownership of an asset from old owner to new without physically shifting the asset. In banking terms, it means transfer of funds from one deposit account to another at the same financial institution. This results in fast transfer of funds so that payee can use the funds immediately. Book transfers eliminates check clearing float.
+
+A GIRO (General Interbank Recurring Order) is also a method to directly transfer funds from one bank account to another without the use of physical checks. A GIRO is generally cheaper ($0.5 per transfer). A GIRO usually takes about a day or two to clear. The funds will leave the payor's account on day zero. GIRO transfers are predominantly used in European countries.
+
+#### _Float_
+A float in financial terms is a money within the banking system that is briefly counted twice due to the time gaps between registering it as a deposit or a withdrawal. The delay happens usually due to processing of paper cheques. The bank credits a customer account as soon as the cheque is deposited, but it takes some time to receive the money from payers bank and record it. Until that happens, the amount is written as "exists" both in the source and target accounts in both the payers and recipients account. The float enables the payer bank to earn extra interest on those funds before they get cleared.
+
+#### _Lock Box_
+A service offered by banks to companies in which the company receives payments by mail to a post office box and the bank picks up the payments several times a day, deposits them into the company's account, and notifies the company of the deposit. This enables the company to put the money to work as soon as it's received, but the amounts must be large in order for the value obtained to exceed the cost of the service.
+
+#### _Non Operating Balance/Assets_
+Non operating assets/funds/balance are redundant assets that do not contribute to the core operations of the company. These are the assets that a company may keep around but not use it. These assets may still generate income or provide a ROI. Non operating assets are listed in the company's balance sheet along with operating assets/balance. Common non operating assets are unallocated cash, marketable securities, loans receivable, idle equipments and vacant land.
