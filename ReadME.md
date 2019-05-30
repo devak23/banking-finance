@@ -101,6 +101,10 @@ This is a Swift payment format used for cash transfer specifically for cross-bor
 |:72 | Sender to receiver information|
 |:77B | Regulatory Reporting|
 
+BEN - (beneficiary) means you do not pay any charge. We receive your payment minus all transfer charges.
+OUR - This instruction means you pay all transfer charges. We receive all your payment.
+SHA - (shared) means you only pay your bank's outgoing transfer charge. We receive your payment minus the correspondent (intermediary) bank charges.
+
 #### _BAI2_
 BAI2 format is a specialized set of codes used for cash management by Bank Administration Institute (BAI). BAI2 files come to an account holder from a BANK. The account holder imports the file into a book keeping application to reconcile bank statements. Reconciliation is a process whereby the bank statements are compared to an book keeping application's  data and differences are resolved. If you have to choose between BAI2 and MT940 then you need to consider where the client location is. If client location and Banks are in USA , BAI2 is good and you will find lot of documentations on the config. If you do business with International Banks and your client location is not in US don't think of BAI2, since BAI is not most used format for banks around the world. Switch to MT940.
 
