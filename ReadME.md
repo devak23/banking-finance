@@ -79,3 +79,60 @@ In order to initiate an ACH payment that crosses borders into the electronic pay
 In those parts of the world that do not have systems similar to the ACH system, it may be necessary to pay by the more expensive wire transfer method. A wire transfer is expensive not only for the sender, but also for the recipient, who is charged a lifting fee by the receiving bank to process the payment.
 
 When the much higher cost of a wire transfer is compared to the cost of an ACH transfer, it is apparent that global ACH is a much more cost-effective solution, despite the issues with transferring information into the ACH formats required for different regions.
+
+#### _MT103_
+This is a Swift payment format used for cash transfer specifically for cross-border wire transfer. MT101 messages were designed for Corporates for bulk transfer. MT103 relate to single transfer and is predominantly used between bank to bank. So MT101, is a message that gets sent to a bank to deduct the money from an account  - the payment instruction. This message can contain 1 or more lines. This means there can be a sinle instruction stating to debit 100$ from account X and out of that, 50$ should go to Account A, 20 to B and 30 to C.  When the bank receives this message, it will forward those single lines to bank where the money needs to be added to that account. This could be the same bank or another bank. Thus, MT101 is the actual payment instruction that gets sent and MT103 is the internal single lines messages used within the bank. Following are the fields in a MT013 message:
+
+|Field|Value|
+|:-----:|:-----:|
+|:20| Transaction Reference Number|
+|:23B| Bank Operation Code |
+|:32A| Value date/Currency/Interbank Settled|
+|:33B| Currency/Original Ordered Amount|
+|:50A, F or K| Ordering Customer (Payer)|
+|:52A or D| Ordering institution (Payer's Bank)|
+|:53A, B or D| Senders Correspondent (Bank)|
+|:54A, B or D| Receivers Correspondent (Bank)|
+|:56A, C or D| Intermediary (Bank)|
+|:57A, B, C or D| Account with Institution (Beneficiary Bank)|
+|:59 or 59A| Beneficiary|
+|:70 | Remittance information (Payment reference)|
+|:71A | Details of Charges (BEN/OUR/SHA)|
+|:72 | Sender to receiver information|
+|:77B | Regulatory Reporting|
+
+BEN - (beneficiary) means you do not pay any charge. We receive your payment minus all transfer charges.
+OUR - This instruction means you pay all transfer charges. We receive all your payment.
+SHA - (shared) means you only pay your bank's outgoing transfer charge. We receive your payment minus the correspondent (intermediary) bank charges.
+
+#### _BAI2_
+BAI2 format is a specialized set of codes used for cash management by Bank Administration Institute (BAI). BAI2 files come to an account holder from a BANK. The account holder imports the file into a book keeping application to reconcile bank statements. Reconciliation is a process whereby the bank statements are compared to an book keeping application's  data and differences are resolved. If you have to choose between BAI2 and MT940 then you need to consider where the client location is. If client location and Banks are in USA , BAI2 is good and you will find lot of documentations on the config. If you do business with International Banks and your client location is not in US don't think of BAI2, since BAI is not most used format for banks around the world. Switch to MT940.
+
+#### _BookTransfer_ _GIRO_
+A book transfer is a transfer of legal right of ownership of an asset from old owner to new without physically shifting the asset. In banking terms, it means transfer of funds from one deposit account to another at the same financial institution. This results in fast transfer of funds so that payee can use the funds immediately. Book transfers eliminates check clearing float.
+
+A GIRO (General Interbank Recurring Order) is also a method to directly transfer funds from one bank account to another without the use of physical checks. A GIRO is generally cheaper ($0.5 per transfer). A GIRO usually takes about a day or two to clear. The funds will leave the payor's account on day zero. GIRO transfers are predominantly used in European countries.
+
+#### _Float_
+A float in financial terms is a money within the banking system that is briefly counted twice due to the time gaps between registering it as a deposit or a withdrawal. The delay happens usually due to processing of paper cheques. The bank credits a customer account as soon as the cheque is deposited, but it takes some time to receive the money from payers bank and record it. Until that happens, the amount is written as "exists" both in the source and target accounts in both the payers and recipients account. The float enables the payer bank to earn extra interest on those funds before they get cleared.
+
+#### _Lock Box_
+A service offered by banks to companies in which the company receives payments by mail to a post office box and the bank picks up the payments several times a day, deposits them into the company's account, and notifies the company of the deposit. This enables the company to put the money to work as soon as it's received, but the amounts must be large in order for the value obtained to exceed the cost of the service.
+
+#### _Non Operating Balance/Assets_
+Non operating assets/funds/balance are redundant assets that do not contribute to the core operations of the company. These are the assets that a company may keep around but not use it. These assets may still generate income or provide a ROI. Non operating assets are listed in the company's balance sheet along with operating assets/balance. Common non operating assets are unallocated cash, marketable securities, loans receivable, idle equipments and vacant land.
+
+#### _Value Date_
+Value date has several meanings in different branches of finance.
+- In Banking systems, the value date refers to the date at which the ownership changes from one party to the other in case of payments made from party A to party B. In other words, it could also be the date on which an account holder can use the funds that have been deposited in her account after a cheque is cleared. Its also the date on which the deposits in the account start earning interest.
+- In trading systems, the value date refers to the date on which the item was bought, sold or must be delivered.
+- In accounting systems, the value date refers to the date on which the allocated/budgeted/contracted funds are paid, received or used.
+- In general its a date when the value of a given asset (which fluctuates in price) is determined.
+
+#### _Settlement Date_
+Settlement date refers to the date:
+- in trading systems, when the trade was settled or the assets actually changed the ownership from party A to party B.
+- in banking systems, when the funds actually get deposited into the beneficiary account.
+
+#### _Transaction Date_
+Transaction date refers to the date on which a trade/order/purchase/sales gets executed and registered in the system.
