@@ -1,9 +1,9 @@
 #### _Book Value Per Share_ (BVPS)
 Book value per common share (or simply Book value per share) is a method to calculate per share value based on common shareholder's equity in the company. In other words its the ratio of total assets in the company to the number of shares (except the preffered shares). In general, this is the value that you will get if the company is liquidated. Hence it is always preferable to buy a stock with a high book value.
 
-Book value = [Total assets - intangible assets (patents, goodwill etc) - preffered equity] / total outstanding shares
+Book value Per Share = [Total assets - intangible assets (patents, goodwill etc) - preffered equity] / total outstanding shares
 
-Book value fails to take into account the intangible assets that may increase the market value of a share. For example, in software companies, the intangible assets are the intellectual property and the workforce which is not considered in the book value. The intangible assets are not reflected on the company's balance sheet.
+Book value (or networth or shareholders equity) fails to take into account the intangible assets that may increase the market value of a share. For example, in software companies, the intangible assets are the intellectual property and the workforce which is not considered in the book value. The intangible assets are not reflected on the company's balance sheet.
 
 #### _Earnings Per Share_ (EPS)
 Earnings per share is basically "Profit per share". EPS is the ratio of the net income (minus the dividents paid on the preferred stock) to outstanding shares in the market
@@ -37,3 +37,58 @@ B/M = Book Value per share / Market value per share OR
 B/M = Book Value / Market Cap
 
 If the ratio is below 1, then he stock is overvalued. Conversely, if the ratio is more than 1, then the stock is considered undervalued. Lets say a video game company A has a book value of 600 million (60 crores), but the market capitalization (or maket value of all the outstanding shares times the price of a single share) is 800 million (80 crores), then B/M = 600/800 = 0.75 and indicates that the stock may be overvalued. B/M ratio does not take into consideration the intangible assets of the company.
+
+#### _Profitability Ratios_
+Profitability Ratios are of two types viz. 
+- Return on Sales 
+- Return on Investment.
+
+Return on Sales mostly is calculated taking into account 
+- Gross Profit Margin
+- Operating Profit Margin 
+- Pretax Margin 
+- Net Profit Margin
+
+Return on Investment is calculated taking into account 
+- Return on Equity (ROE)
+- Return on Capital Employed (ROCE)
+- Return on Assets (ROA)
+
+#### _Return on Capital Employed_ (ROCE)
+This is a profitability Ratio which is explained as follows:
+The general definition of assets as per accounting princicples is
+Assets  = Equity + Liabilities
+		= (Equity Share Capital + Reserve Surplus + Preferred Equity) +  (Current Liabilities + Non Current Liabilities)
+
+Now Current liabilities may include:
+- Short term debt
+- Trade Payables
+- Advances and Overdues
+- Other short term libabilites 
+
+Similarly, Non Current liabilities may include:
+- Long term debt
+- Deferred tax Liability
+- Other long term liabilites
+
+Now Return On Equity = Profit after tax (PAT) / Total Equity
+
+So ROCE should also be = Profit / Total Equity. 
+
+However, we are talking about returns on Capital employed. This capital will be the "total capital" of the company which includes the initial equity, surplus value and investments made by the promoters and investors and the money company has borrowed from other sources. So when the company generates a profit generally indicated by EBIT (Earnings before interest and tax), then it has to first pay off the interest (created by long term debt and short term debt). After that, it has to pay off the govt tax and thus you get the Profit after tax (PAT) which is used in calculation of ROE (above). In case of ROCE, you need to consider total capital and hence (total) profit should also be considered i.e. profit before tax aka: EBIT. Thus
+
+ROCE = EBIT / Capital Employed
+
+Now Capital Employed could take various interpretations by various analysts. Currently there are 3 definitions viz:
+Capital employed = Equity + Non Current Liabilities (all of them) OR
+Capital employed = Equity + Long term debt OR
+Capital employed = Equity + Long Term debt + Short Term debt.
+
+The last definition makes more sense as it is the capital that the company has borrowed and invested in the business.
+So ROCE = EBIT / (Equity + Long term debt + short term debt)
+
+- ROCE gives the overall returns on the total capital employed
+- It can be compared to other investment modes like bonds, mutual funds to compare if you get the same returns over there.
+- It clearly tells the investor to invest only if ROCE > Cost of capital
+
+
