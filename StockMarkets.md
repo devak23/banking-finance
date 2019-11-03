@@ -91,4 +91,15 @@ So ROCE = EBIT / (Equity + Long term debt + short term debt)
 - It can be compared to other investment modes like bonds, mutual funds to compare if you get the same returns over there.
 - It clearly tells the investor to invest only if ROCE > Cost of capital
 
+#### _Compound Annual Growth Rate_ (CAGR)
+CAGR (sometimes pronounced 'kager') is a geometric progression ratio that provides a constant rate of return over the time period. A basic growth rate is expressed as a difference between two values in time in terms of percentage of the first value.
+
+i.e. Growth = (present - past)/ past x 100
+
+This is fine if you are just having 2 values to deal with. In practical cases such as revenue each year, if you were to find the average revenue per year then the simple growth formula isn't accurate. Considering compounding effect, the new value becomes a multiple of old with a growth exponential
+
+i.e present = past (1 + growth) ^ n  {where n is the period}
+Therefore solving for growth,
+
+Growth (compounded annual growth) = (present /past) ^ (1/n) - 1  
 
